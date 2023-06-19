@@ -1,0 +1,17 @@
+﻿BigO notation:
+    O(n):
+      	n is the number through which the code will run. We call it as 			proportion. If n=10, code will run through 10 etc. refer to O(n).py 		file.
+
+      Rules for simplifying: 
+         Drop Constants:
+            if the input n is running twice or thrice or any number of times 		that technically makes the notation as O(2n) or O(3n) or any other 		constant(c) O(cn). we simply drop the constants and make it again asO(n).
+    O(n^2):
+        if code is running n to the power any number, like if n=10 and the body of the loop has nested or nested nested loop there, code will run 0-99. and if n runs through to any other power any number, we simply call it as O(n^2) rather than calling it as O(n^3) or O(n^4).
+        
+        Rules for simplifying:
+            Drop non-dominants:
+
+
+    
+
+        
