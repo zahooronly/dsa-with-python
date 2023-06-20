@@ -28,19 +28,49 @@ class LinkedList:
         self.length+=1
             
             
+    def pop(self):
+        if self.head is None:
+            return None
+        else:
+            pre=self.head
+            temp=self.head
+            while(temp.next is not None):
+                pre=temp
+                temp=temp.next
 
 
- 
+            self.tail=pre
+            self.tail.next=None
+            self.length-=1
+            if self.length==0:
+                self.head=None
+                self.tail=None
+            return temp.value
+
 my_linked_list = LinkedList(4)
 
 
-print('Head:', my_linked_list.head.value)
-print('Tail:', my_linked_list.tail.value)
-print('Length:', my_linked_list.length)
-print(my_linked_list.printLL())
-my_linked_list.append(56)
-print('Head:', my_linked_list.head.value)
-print('Tail:', my_linked_list.tail.value)
-print('Length:', my_linked_list.length)
-print(my_linked_list.printLL())
+# print('Head:', my_linked_list.head.value)
+# print('Tail:', my_linked_list.tail.value)
+# print('Length:', my_linked_list.length)
+# print(my_linked_list.printLL())
 # my_linked_list.append(56)
+# print('Head:', my_linked_list.head.value)
+# print('Tail:', my_linked_list.tail.value)
+# print('Length:', my_linked_list.length)
+my_linked_list.append(56)
+my_linked_list.append(76)
+my_linked_list.append(76)
+
+# print(my_linked_list.printLL())
+print(my_linked_list.pop())
+# print(my_linked_list.printLL())
+print(my_linked_list.pop())
+print(my_linked_list.pop())
+print(my_linked_list.pop())
+print(my_linked_list.pop())
+print(my_linked_list.pop())
+# print(my_linked_list.printLL())
+# print(my_linked_list.pop())
+# print(my_linked_list.printLL())
+
