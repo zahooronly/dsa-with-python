@@ -62,7 +62,7 @@ my_linked_list.append(56)
 my_linked_list.append(76)
 my_linked_list.append(76)
 
-# print(my_linked_list.printLL())
+print(my_linked_list.printLL())
 print(my_linked_list.pop())
 # print(my_linked_list.printLL())
 print(my_linked_list.pop())
