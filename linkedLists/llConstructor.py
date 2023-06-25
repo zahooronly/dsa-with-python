@@ -27,7 +27,18 @@ class LinkedList:
             self.tail=newNode
         self.length+=1
             
-            
+    def prepend(self,value):
+        newNode=Node(value=value)
+        if self.length==0:
+            self.head=newNode
+            self.tail=newNode
+        else:
+            newNode.next=self.head
+            self.head=newNode
+        self.length+=1
+        return True
+        
+                
     def pop(self):
         if self.head is None:
             return None
@@ -49,27 +60,28 @@ class LinkedList:
 
 my_linked_list = LinkedList(4)
 
-
-print('Head:', my_linked_list.head.value)
-print('Tail:', my_linked_list.tail.value)
-print('Length:', my_linked_list.length)
-print(my_linked_list.printLL())
-my_linked_list.append(56)
-print('Head:', my_linked_list.head.value)
-print('Tail:', my_linked_list.tail.value)
-print('Length:', my_linked_list.length)
-my_linked_list.append(56)
-my_linked_list.append(76)
-my_linked_list.append(76)
-
-print(my_linked_list.printLL())
-print(my_linked_list.pop())
+# print('Head:', my_linked_list.head.value)
+# print('Tail:', my_linked_list.tail.value)
+# print('Length:', my_linked_list.length)
 # print(my_linked_list.printLL())
-print(my_linked_list.pop())
-print(my_linked_list.pop())
-print(my_linked_list.pop())
-print(my_linked_list.pop())
-print(my_linked_list.pop())
+# my_linked_list.append(56)
+# print('Head:', my_linked_list.head.value)
+# print('Tail:', my_linked_list.tail.value)
+# print('Length:', my_linked_list.length)
+# my_linked_list.append(56)
+# my_linked_list.append(76)
+# my_linked_list.append(76)
+
 # print(my_linked_list.printLL())
 # print(my_linked_list.pop())
 # print(my_linked_list.printLL())
+# print(my_linked_list.pop())
+# print(my_linked_list.pop())
+# print(my_linked_list.pop())
+# print(my_linked_list.pop())
+# print(my_linked_list.pop())
+# print(my_linked_list.printLL())
+# print(my_linked_list.pop())
+print(my_linked_list.printLL())
+my_linked_list.prepend(3)
+print(my_linked_list.printLL())
