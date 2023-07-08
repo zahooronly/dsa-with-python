@@ -43,4 +43,4 @@ To use the data structures in this repository, follow these steps:
 1. Clone the repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/your-username/data-structures-python.git
+   git clone https://github.com/zahooronly/dsa-with-python.git
