@@ -21,7 +21,7 @@ The implementation of each data structure is accompanied by clear explanations o
 
 This repository currently includes the following data structures:
 
-- Array
+- Arrays
 - Linked List
 - Stack
 - Queue
@@ -44,3 +44,4 @@ To use the data structures in this repository, follow these steps:
 
    ```bash
    git clone https://github.com/zahooronly/dsa-with-python.git
+   ```
