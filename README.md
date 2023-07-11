@@ -11,7 +11,7 @@ This repository contains a collection of common data structures implemented in P
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+## Introduction:
 
 The purpose of this repository is to provide a comprehensive set of well-documented data structures implemented in Python. Each data structure is organized in its own module, allowing for easy understanding and usage.
 
